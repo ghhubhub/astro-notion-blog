@@ -20,3 +20,16 @@
   padding: 0;
   border: 0;
 }
+
+
+/* <slot name="main" />のCSS */
+.main{
+  background: var(--bg);
+  padding: 2vw;
+}
+
+/* <slot name="aside" />のCSS */
+.aside{
+  background: var(--bg);
+  padding: 2vw;
+}
