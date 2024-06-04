@@ -78,9 +78,7 @@ if (database.Icon && database.Icon.Type === 'file') {
   <body>
     <GoogleAnalytics trackingId={PUBLIC_GA_TRACKING_ID} />
 
-    //+------------------------------------------------------------------+
-    //|  headerをbodyタグの直下に移動してくる                              |
-    //+------------------------------------------------------------------+
+
     <header>
       <h1>
         <a href={getNavLink('/')}>
@@ -314,8 +312,7 @@ if (database.Icon && database.Icon.Type === 'file') {
     --gap-double: 2rem;
 
     --bg: #f8fff7;          /* 背景色で使われている */
-    --fg: #333;
-    --accents-1: #f50505;
+    --accents-1: #000000;   /* タイトルで使われている */
     --accents-2: #fffb11;
     --accents-3: #3802fc;
     --geist-foreground: #ea00ff;
