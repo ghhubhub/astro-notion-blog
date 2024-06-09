@@ -22,7 +22,7 @@ const siteTitle = title ? `${title} - ${database.Title}` : database.Title
 const siteDescription = description ? description : database.Description
 const siteURL = new URL(getNavLink(path), Astro.site).toString()
 const siteOGImage = new URL(
-  getStaticFilePath('/images/default-og-image.png'),
+  getStaticFilePath('/default-og-image.png'),
   Astro.site
 )
 
@@ -63,8 +63,7 @@ if (database.Icon && database.Icon.Type === 'file') {
   <meta property="og:title" content="Accrue Points Guide" />
   <meta property="og:description" content="Accrue Points Guide" />
   <meta property="og:site_name" content="Accrue Points Guide" />
-  <!-- <meta property="og:image" content="https://astro-notion-blog-68n.pages.dev/default-og-image.png" /> -->
-  <meta property="og:image" content={siteOGImage} />
+  <meta property="og:image" content="https://astro-notion-blog-68n.pages.dev/default-og-image.png" />
   <meta name="twitter:title" content="Accrue Points Guide" />
   <meta name="twitter:description" content="Accrue Points Guide" />
   <meta name="twitter:card" content="summary_large_image" />
